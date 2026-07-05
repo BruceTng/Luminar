@@ -1,0 +1,98 @@
+:root{
+    --PretoEsverdeado:#080d0a;
+    --VerdeVibrante:#3dd68c;
+    --VerdeSuave:#7A9E82;
+    --Dourado:#f0a500;
+    --BrancoSuave:#F8F9FA;
+    --VerdeVibranteEscuro: #2FB876;
+    --PretoEsverdeadoClaro: #12201A;
+}
+*{
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+    text-decoration:none;
+    list-style:none;
+    font-family:sans-serif;
+}
+/* HEADER___________________________________________________________________________________________________________________________________________________________________ */
+header{
+    background-color:var(--PretoEsverdeado);
+    color:var(--BrancoSuave);
+    padding:12px;
+    border-bottom:1px solid var(--VerdeVibrante);
+}
+.cabecalho{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+/* Logo Clicavel */
+#LogoLink{
+    color:var(--BrancoSuave);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-left:10px;
+}
+#LogoLink img{
+    height:40px;
+    background-color:var(--VerdeVibrante);
+    border-radius:50%;
+    padding:2px;
+}
+/* Links */
+#Links ul{
+    display:flex;
+    gap:100px;
+}
+#Links ul li a{
+    color:var(--VerdeSuave);
+}
+#Links ul li a:hover{
+    color:var(--BrancoSuave);
+}
+/* Carrinho e orcamento */
+#Carrinho{
+    display:flex;
+    align-items:center;
+    gap:45px;
+    padding-right:20px;
+}
+#Carrinho a img{
+    height:40px;
+    color:var(--BrancoSuave);
+}
+#Carrinho a img{
+    background-color:var(--PretoEsverdeado);
+    padding:6px;
+    border-radius:50%;
+    overflow:visible;
+}
+#Carrinho a img:hover{
+    background-color:var(--PretoEsverdeadoClaro);
+}
+#Carrinho button{
+    background-color:var(--VerdeVibrante);
+    padding:12px 20px;
+    border-radius:20px;
+    border:none;
+    font-weight:520;
+    font-size:0.95rem;
+}
+#Carrinho button:hover{
+    background-color:var(--VerdeVibranteEscuro);
+}
+
+/* MAIN_____________________________________________________________________________________________________________________________________________________________________ */
+main{
+    background-color:var(--PretoEsverdeado);
+    color:var(--BrancoSuave);
+}
+/* FOOTER____________________________________________________________________________________________________________________________________________________________________ */
+footer{
+    background-color:var(--PretoEsverdeado);
+    color:var(--BrancoSuave);
+    border-top:1px solid var(--VerdeVibrante);
+}
