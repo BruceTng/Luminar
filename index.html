@@ -16,7 +16,7 @@
         <section class="cabecalho">
             <div>
                 <a href="index.html" id="LogoLink">
-                    <img src="./src/assets/LogoLeaf.svg">
+                    <img src="./src/assets/Logo/LogoLeaf.svg">
                     <h2>Luminar</h2>
                 </a>
             </div>
@@ -30,7 +30,7 @@
             </nav>
             <div id="Carrinho">
                 <a href="./src/pages/Checkout.html">
-                    <img src="./src/assets/Cart.png">
+                    <img src="./src/assets/Icones/Cart.png">
                 </a>
                 <button><a>Entre ou Cadastre-se</a></button>
             </div>
@@ -43,7 +43,7 @@
             
             <!-- Texto introdutório -->
             <div class="Texto">
-                <span id="Titulo1">· ENERGIA LIMPA PARA O BRASIL</span>
+                <span id="Topico1"><img src="./src/assets/Icones/Ponto.svg">ENERGIA LIMPA PARA O BRASIL</span>
                 <h1>O futuro é <span>solar.</span></h1>
                 <p>
                  Educamos, projetamos e fornecemos soluções em energia renovável para residências,
@@ -51,7 +51,7 @@
                 </p>
                 <button id="IrProdutos">
                     <a>Ver Produtos</a>
-                    <img src="./src/assets/FlechaDireita.svg">
+                    <img src="./src/assets/Icones/FlechaDireita.svg">
                 </button>
                 <button id="ComoFunciona"><a>Como funciona</a></button>
             </div>
@@ -88,7 +88,7 @@
 
         <!-- 01 - Energia Sustentavel -->
         <section id="EnergiaSustentavel">
-            <p>01 - ENERGIA SUSTENTÁVEL</p>
+            <p id="Topico2">01 - ENERGIA SUSTENTÁVEL</p>
             <h2>Fontes renováveis que movem o mundo</h2>
 
             <!--  -->
@@ -96,53 +96,53 @@
                 
                 <!-- Card 01 -->
                 <div class="cards">
-                    <img src="">
+                    <img src="./src/assets/Icones/Sol.svg">
                     <h5>Energia Solar</h5>
-                    <p id="texto">
+                    <p class="TextoEnergias">
                         A radiação solar é convertida em eletricidade através de células fotovoltaicas. 
                         O Brasil tem um dos maiores índices de irradiação solar do mundo 
                         — mais de 4,5 kWh/m² por dia na maior parte do território.
                     </p>
-                    <span></span>
-                    <P>4.500+ horas de sol/ano</P>
+                    <hr class="LinhaDivisoria">
+                    <P id="EstatisticasCards">4.500+ horas de sol/ano</P>
                 </div>
                 
                 <!-- Card 02 -->
                 <div class="cards">
-                    <img src="">
+                    <img src="./src/assets/Icones/Vento.svg">
                     <h5>Energia Eólica</h5>
-                    <p id="texto">
+                    <p class="TextoEnergias">
                         Turbinas captam a energia cinética do vento e geram eletricidade. 
                         O Nordeste brasileiro lidera em capacidade instalada, 
                         com ventos constantes que garantem fator de capacidade superior a 45%.
                     </p>
-                    <span></span>
-                    <P>23% da matriz elétrica nacional</P>
+                    <hr class="LinhaDivisoria">
+                    <P id="EstatisticasCards">23% da matriz elétrica nacional</P>
                 </div>
                 
                 <!-- Card 03 -->
                 <div class="cards">
-                    <img src="">
+                    <img src="./src/assets/Icones/Pingos.svg">
                     <h5>Energia Hidráulica</h5>
-                    <p id="texto">
+                    <p class="TextoEnergias">
                         A força da água em movimento movimenta turbinas geradoras. 
                         O Brasil possui a maior capacidade hidrelétrica da América Latina, 
                         aproveitando sua vasta rede hidrográfica.
                     </p>
-                    <span></span>
-                    <P>60% da energia elétrica brasileira</P>
+                    <hr class="LinhaDivisoria">
+                    <P id="EstatisticasCards">60% da energia elétrica brasileira</P>
                 </div>
                 
                 <!-- Card 04 -->
                 <div class="cards">
-                    <img src="">
+                    <img src="./src/assets/Icones/Eletrico.svg">
                     <h5>Energia da Biomassa</h5>
-                    <p id="texto">
+                    <p class="TextoEnergias">
                         Resíduos orgânicos, como bagaço de cana e resíduos florestais, 
                         são convertidos em energia térmica ou elétrica, fechando o ciclo do carbono de forma sustentável.
                     </p>
-                    <span></span>
-                    <P>9% da matriz energética</P>
+                    <hr class="LinhaDivisoria">
+                    <P id="EstatisticasCards">9% da matriz energética</P>
                 </div>
             </div>
         </section>
@@ -159,127 +159,142 @@
         
         <!-- 02 - Loja -->
         <section id="Produtos">
-            <div>
+            <h5>02 Loja</h5>
+            <div id="TextoProdutos">
                 <h2>Produtos sustentáveis</h2>
                 <p>
                     Equipamentos certificados com melhor custo-benefício do mercado. Frete grátis para todo o Brasil.
                 </p>
             </div>
-            
+
             <!-- Card dos Produtos -->
-             <!-- Card 01 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Painel Solar Monocristalino 400W</h4>
-                    <span>★★★★★ (214)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$1.590</del>
-                    <p class="preco">R$1.290</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+            <div id="ProdutosInicio">
+                <!-- Card 01 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/PainelSolar.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Painel Solar Monocristalino 400W</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (214)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">Eficiência 21.4%</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Garantia 25 anos</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Resistente a granizo</li>
+                        </ul>
+                        <del>R$1.590</del>
+                        <span>
+                            <p class="preco">R$1.290</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
 
-            <!-- Card 02 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Kit Solar Residencial 5kWp</h4>
-                    <span>★★★★★ (98)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$1.590</del>
-                    <p class="preco">R$1.290</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+                <!-- Card 02 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/KitSolar.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Kit Solar Residencial 5kWp</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (98)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">Inclui instalação</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Inversor híbrido</li>
+                            <li><img src="./src/assets/Icones/Check.svg">App de monitoramento</li>
+                        </ul>
+                        <del>R$1.590</del>
+                        <span>    
+                            <p class="preco">R$1.290</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
 
-            <!-- Card 03 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Aquecedor Solar Premium 300L</h4>
-                    <span>★★★★★ (156)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$18.500</del>
-                    <p class="preco">R$14.900</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+                <!-- Card 03 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/AquecedorSolar.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Aquecedor Solar Premium 300L</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (156)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">Reduz 80% da conta</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Inox AISI 304</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Garantia 10 anos</li>
+                        </ul>
+                        <del>R$18.500</del>
+                        <span>
+                            <p class="preco">R$14.900</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
 
-            <!-- Card 04 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Turbina Eólica Residencial 1kW</h4>
-                    <span>★★★★★ (43)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$3.900</del>
-                    <p class="preco">R$3.200</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+                <!-- Card 04 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/TurbinaResidencial.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Turbina Eólica Residencial 1kW</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (43)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">Silenciosa < 45dB</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Vento mín. 3 m/s</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Sem manutenção anual</li>
+                        </ul>
+                        <del>R$3.900</del>
+                        <span>
+                            <p class="preco">R$3.200</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
 
-            <!-- Card 05 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Bateria de Armazenamento 10kWh</h4>
-                    <span>★★★★★ (67)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$10.200</del>
-                    <p class="preco">R$8.700</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+                <!-- Card 05 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/BateriaArmazenamento.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Bateria de Armazenamento 10kWh</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (67)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">LiFePO4 seguro</li>
+                            <li><img src="./src/assets/Icones/Check.svg">6000+ ciclos</li>
+                            <li><img src="./src/assets/Icones/Check.svg">Instalação simples</li>
+                        </ul>
+                        <del>R$10.200</del>
+                        <span>
+                            <p class="preco">R$8.700</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
 
-            <!-- Card 06 -->
-             <section>
-                <div>
-                    <img src="">
-                </div>
-                <div>
-                    <h4>Carregador Solar Portátil 100W</h4>
-                    <span>★★★★★ (389)</span>
-                    <ul>
-                        <li>✅Eficiência 21.4%</li>
-                        <li>✅Garantia 25 anos</li>
-                        <li>✅Resistente a granizo</li>
-                    </ul>
-                    <del>R$1.100</del>
-                    <p class="preco">R$890</p>
-                    <button>🛒Comprar</button>
-                </div>
-            </section>
+                <!-- Card 06 -->
+                <section class="CardsProdutos">
+                    <div class="ImagemProduto">
+                        <img src="./src/assets/Produtos/CarregadorSolarPortatil.png">
+                    </div>
+                    <div class="TextoCard">
+                        <h4>Carregador Solar Portátil 100W</h4>
+                        <span class="AvaliacaoProduto">★★★★★ (389)</span>
+                        <ul>
+                            <li><img src="./src/assets/Icones/Check.svg">Dobrável e leve</li>
+                            <li><img src="./src/assets/Icones/Check.svg">USB-A + USB-C</li>
+                            <li><img src="./src/assets/Icones/Check.svg">IP67 à prova d'água</li>
+                        </ul>
+                        <del>R$1.100</del>
+                        <span>
+                            <p class="preco">R$890</p>
+                            <button><img src="./src/assets/Icones/Cart2.svg">Comprar</button>
+                        </span>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <section id="Duvidas">
@@ -349,7 +364,7 @@
     </main>
     <footer>
         <div id="LogoFooter">
-            <img src="./src/assets/LogoLeaf.svg">
+            <img src="./src/assets/Logo/LogoLeaf.svg">
             <p>Luminar</p>
         </div>
         <small>&copy; 2026 Luminar Energia Sustentável · Todos os direitos reservados.</small>
