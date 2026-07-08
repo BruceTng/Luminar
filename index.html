@@ -159,7 +159,7 @@
         
         <!-- 02 - Loja -->
         <section id="Produtos">
-            <h5>02 Loja</h5>
+            <h5>02 - Loja</h5>
             <div id="TextoProdutos">
                 <h2>Produtos sustentáveis</h2>
                 <p>
@@ -297,62 +297,64 @@
             </div>
         </section>
 
-        <section id="Duvidas">
-            <div>
-                <p>03 - Dúvidas</p>
-                <h2>Perguntas frequentes</h2>
-                <p>Não encontrou o que procura? Fale com nosso time pelo WhatsApp ou e-mail.</p>
-            </div>
-            <div>
-                <ul>
-                    <!-- FAQ 01 -->
-                    <li><details>
-                        <summary>Qual o retorno de investimento de um painel solar?</summary>
-                        <p>
-                            O payback médio de uma instalação solar residencial no Brasil é de 3 a 5 anos. 
-                            Considerando a vida útil dos painéis de 25 anos, 
-                            o retorno financeiro ao longo do período pode ultrapassar 5 vezes o valor investido
-                        </p>
-                    </details></li>
-                    
-                    <!-- FAQ 02 -->
-                    <li><details>
-                        <summary>Preciso de autorização para instalar painéis solares?</summary>
-                        <p>
-                            Sim. É necessário solicitar conexão à distribuidora de energia local, 
-                            conforme a Resolução Normativa ANEEL 687/2015. 
-                            Nossos técnicos cuidam de toda a burocracia para você.
-                        </p>
-                    </details></li>
+        <section id="SecaoDuvidas">
+            <h5>03 - Dúvidas</h5>
+            <section id="Duvidas">
+                <div id="Topico3">
+                    <h2>Perguntas frequentes</h2>
+                    <p>Não encontrou o que procura? Fale com nosso time pelo WhatsApp ou e-mail.</p>
+                </div>
+                <div id="Respostas">
+                    <ul>
+                        <!-- FAQ 01 -->
+                        <li><details class="FAQs">
+                            <summary>Qual o retorno de investimento de um painel solar?<img src="./src/assets/Icones/SetaBaixo.svg"></summary>
+                            <p>
+                                O payback médio de uma instalação solar residencial no Brasil é de 3 a 5 anos. 
+                                Considerando a vida útil dos painéis de 25 anos, 
+                                o retorno financeiro ao longo do período pode ultrapassar 5 vezes o valor investido
+                            </p>
+                        </details></li>
+                        
+                        <!-- FAQ 02 -->
+                        <li><details class="FAQs">
+                            <summary>Preciso de autorização para instalar painéis solares?<img src="./src/assets/Icones/SetaBaixo.svg"></summary>
+                            <p>
+                                Sim. É necessário solicitar conexão à distribuidora de energia local, 
+                                conforme a Resolução Normativa ANEEL 687/2015. 
+                                Nossos técnicos cuidam de toda a burocracia para você.
+                            </p>
+                        </details></li>
 
-                    <!-- FAQ 03 -->
-                    <li><details>
-                        <summary>Os painéis funcionam em dias nublados?</summary>
-                        <p>
-                            Sim, porém com eficiência reduzida (20-50% da capacidade nominal). 
-                            A radiação difusa ainda permite geração de energia mesmo sem sol direto. 
-                            O sistema com bateria garante fornecimento constante.
-                        </p>
-                    </details></li>
+                        <!-- FAQ 03 -->
+                        <li><details class="FAQs">
+                            <summary>Os painéis funcionam em dias nublados?<img src="./src/assets/Icones/SetaBaixo.svg"></summary>
+                            <p>
+                                Sim, porém com eficiência reduzida (20-50% da capacidade nominal). 
+                                A radiação difusa ainda permite geração de energia mesmo sem sol direto. 
+                                O sistema com bateria garante fornecimento constante.
+                            </p>
+                        </details></li>
 
-                    <!-- FAQ 04 -->
-                    <li><details>
-                        <summary>Qual manutenção é necessária?</summary>
-                        <p>
-                            A manutenção é mínima: limpeza dos painéis a cada 6 meses e inspeção elétrica anual. 
-                            Nossos kits incluem acesso ao app de monitoramento em tmepo real para indentificar qualquer anomalia.
-                        </p>
-                    </details></li>
-                </ul>
-            </div>
+                        <!-- FAQ 04 -->
+                        <li><details class="FAQs">
+                            <summary>Qual manutenção é necessária?<img src="./src/assets/Icones/SetaBaixo.svg"></summary>
+                            <p>
+                                A manutenção é mínima: limpeza dos painéis a cada 6 meses e inspeção elétrica anual. 
+                                Nossos kits incluem acesso ao app de monitoramento em tmepo real para indentificar qualquer anomalia.
+                            </p>
+                        </details></li>
+                    </ul>
+                </div>
+            </section>
         </section>
 
         <section id="Cadastro">
-            <div>    
+            <div id="TextoCadastro">    
                 <h2>Pronto para gerar sua própria energia?</h2>
                 <p>Nossos consultores calculam gratuitamente o sistema ideal para o seu consumo e localização. Sem compromisso.</p>
             </div>
-            <div>
+            <div id="InputCadastro">
                 <input type="text" placeholder="Seu nome"/>
                 <input type="email" placeholder="E-mail"/>
                 <input type="number" placeholder="WhatsApp (opcional)"/>

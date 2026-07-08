@@ -409,6 +409,119 @@ main{
     font-weight:500;
     font-size:23px;
 }
+/* Terceira Parte Duvidas */
+#Duvidas{
+    display:flex;
+    flex-direction:row;
+    gap:150px;
+    margin-bottom:150px;
+}
+#Topico3{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    flex:0 0 30%;
+}
+#SecaoDuvidas h5{
+    color:var(--VerdeVibrante);
+    font-family:'JetBrains Mono', 'Courier New', Courier, monospace;
+    font-weight:500;
+    font-size:15px;
+    margin-bottom:30px;
+}
+#Topico3 h2{
+    color:var(--BrancoSuave);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size:50px;
+}
+#Topico3 p{
+    color:var(--VerdeSuave);
+}
+#Respostas ul{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    max-width:830px;
+}
+.FAQs{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    border-bottom:1px solid var(--VerdeSuave);
+    padding-bottom:20px;
+}
+.FAQs summary{
+    color:var(--BrancoSuave);
+    font-weight:500;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:830px;
+}
+.FAQs summary img{
+    height:22px;
+}
+.FAQs p{
+    color:var(--VerdeSuave);
+    font-weight:500;
+    font-size:16px;
+}
+#Cadastro{
+    background-color:var(--VerdeEscuro);
+    display:flex;
+    flex-direction:row;
+    border:1px solid var(--VerdeVibrante);
+    border-radius:20px;
+    padding:80px 60px 80px 60px;
+    gap:50px;
+}
+#TextoCadastro{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    flex:0 0 45%;
+}
+#TextoCadastro h2{
+    color:var(--BrancoSuave);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+    font-size:50px;
+}
+#TextoCadastro p{
+    color:var(--VerdeSuave);
+    font-weight:500;
+    font-size:18px;
+}
+#InputCadastro{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+#InputCadastro input{
+    background-color:var(--PretoEsverdeadoClaro);
+    padding:15px;
+    border:1px solid var(--VerdeVibrante);
+    border-radius:12px;
+    width:600px;
+    font-weight:600;
+    color:var(--BrancoSuave);
+}
+#InputCadastro button{
+    color:var(--PretoEsverdeado);
+    font-weight:600;
+    background-color:var(--VerdeVibrante);
+    padding:15px;
+    border:none;
+    border-radius:12px;
+}
+#InputCadastro small{
+    color:var(--VerdeSuave);
+    font-weight:500;
+    font-size:13px;
+    margin-left:130px;
+}
 
 /* FOOTER____________________________________________________________________________________________________________________________________________________________________ */
 footer{
