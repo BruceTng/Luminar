@@ -11,8 +11,8 @@
 }
 *{
     box-sizing:border-box;
-    padding:0px;
-    margin:0px;
+    padding:0rem;
+    margin:0rem;
     text-decoration:none;
     list-style:none;
     font-family:sans-serif;
@@ -24,7 +24,7 @@ body{
 header{
     background-color:var(--PretoEsverdeado);
     color:var(--BrancoSuave);
-    padding:12px;
+    padding:1rem;
     border-bottom:1px solid var(--VerdeVibrante);
     position:sticky;
     top:0;
@@ -36,32 +36,31 @@ header{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    padding:0 80px 0 80px;
+    padding:0 5rem 0 5rem;
 }
 /* Logo Clicavel */
 #LogoLink{
     color:var(--BrancoSuave);
     display:flex;
     align-items:center;
-    gap:10px;
-    padding-left:10px;
+    gap:0.6rem;
 }
 #LogoLink h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:20px;
+    font-size:1.5rem;
     font-weight:300;
 }
 #LogoLink img{
-    height:30px;
+    height:2rem;
     background-color:var(--VerdeVibrante);
     border-radius:50%;
-    padding:2px;
+    padding:0.2rem;
     overflow:visible;
 }
 /* Links */
 #Links ul{
     display:flex;
-    gap:100px;
+    gap:7rem;
 }
 #Links ul li a{
     color:var(--VerdeSuave);
@@ -73,16 +72,15 @@ header{
 #Carrinho{
     display:flex;
     align-items:center;
-    gap:20px;
-    padding-right:20px;
+    gap:1.5rem;
 }
 #Carrinho a img{
-    height:40px;
+    height:2.5rem;
     color:var(--BrancoSuave);
 }
 #Carrinho a img{
     background-color:var(--PretoEsverdeado);
-    padding:6px;
+    padding:0.4rem;
     border-radius:50%;
     overflow:visible;
 }
@@ -91,7 +89,7 @@ header{
 }
 #Carrinho button{
     background-color:var(--VerdeVibrante);
-    padding:12px 20px;
+    padding:0.7rem 1.2rem;
     border-radius:20px;
     border:none;
     font-weight:520;
@@ -105,43 +103,43 @@ header{
 main{
     background-color:var(--PretoEsverdeado);
     color:var(--BrancoSuave);
-    padding:100px;
+    padding:6.2rem;
     display:flex;
     flex-direction:column;
 }
 /* Primeira Parte / Texto Introdutorio*/
 #FuturoSolar{
-    padding-bottom:100px;
+    padding-bottom:6.2rem;
     display:flex;
     flex-direction:row;
     align-items:center;
-    gap:60px;
-    margin-bottom:150px;
+    gap:4rem;
+    margin-bottom:9.5rem;
 }
 .Texto{
     font-family:Verdana, sans-serif;
     flex:0 0 33%;
-    max-width:500px;
+    max-width:31.25rem;
 }
 #Topico1{
     display:flex;
     color:var(--VerdeVibrante);
     background-color:var(--PretoEsverdeadoClaro);
     border:1px solid var(--VerdeVibrante);
-    padding:6px 14px;
+    padding:0.6rem 0.8rem;
     border-radius:50px;
-    font-size:13px;
+    font-size:0.8rem;
     font-weight:550;
-    margin-bottom:20px;
+    margin-bottom:1.5rem;
     align-items:center;
-    max-width:270px;
-    max-height:28px;
+    max-width:17rem;
+    max-height:1.8rem;
 }
 #Topico1 img{
-    height:30px;
+    height:2rem;
 }
 .Texto h1{
-    font-size:70px;
+    font-size:4.4rem;
     font-weight:500;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -150,31 +148,32 @@ main{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .Texto p{
-    font-size:18px;
+    font-size:1.12rem;
     color:var(--VerdeSuave);
-    padding:20px 20px 20px 0;
+    padding:1.3rem;
+    padding-left:0rem;
     line-height:1.6;
 }
 #IrProdutos{
     border:none;
-    padding:10px 20px;
+    padding:0.6rem 1.3rem;
     border-radius:20px;
     background-color:var(--VerdeVibrante);
     display:inline-flex;
     align-items:center;
-    gap:6px;
+    gap:0.4rem;
     font-weight:550;
-    margin-right:20px;
+    margin-right:1.3rem;
 }
 #IrProdutos img{
-    height:20px;
+    height:1.3rem;
 }
 #IrProdutos:hover{
     background-color:var(--VerdeVibranteEscuro);
 }
 #ComoFunciona{
     border:1px solid var(--VerdeVibrante);
-    padding:12px 25px;
+    padding:0.75rem 1.7rem;
     border-radius:20px;
     background-color:var(--PretoEsverdeado);
     color:var(--BrancoSuave);
@@ -188,24 +187,24 @@ main{
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
-    gap:20px;
+    gap:1.3rem;
 }
 .box{
     background-color:var(--PretoEsverdeadoClaro);
     border:1px solid var(--VerdeVibrante);
     border-radius:20px;
-    padding:25px;
+    padding:1.6rem;
     display:flex;
     flex-direction:column;
-    gap:5px;
+    gap:0.5rem;
 }
 .box h3{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size:30px;
+    font-size:1.9rem;
     color:var(--VerdeVibrante)
 }
 .box p{
-    font-size:15px;
+    font-size:0.95rem;
     color:var(--VerdeSuave);
 }
 /* Segunda Parte / Energia Sustentavel */
@@ -216,17 +215,17 @@ main{
 }
 #Topico2{
     color:var(--VerdeVibrante);
-    font-size:13px;
-    margin-bottom:30px;
+    font-size:0.8rem;
+    margin-bottom:1.7rem;
 }
 #EnergiaSustentavel h2{
     color:var(--BrancoSuave);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:500;
-    font-size:50px;
+    font-size:3.1rem;
     flex:0 0 40%;
-    max-width:700px;
-    margin-bottom:50px;
+    max-width:43.75rem;
+    margin-bottom:3.125rem;
 }
 .Informacoes{
     display:flex;
@@ -235,30 +234,30 @@ main{
     border:1px solid var(--VerdeSuave);
     border-radius:20px;
     overflow:hidden;
-    margin-bottom:200px;
+    margin-bottom:12.5rem;
 }
 .cards{
     display:flex;
     flex-direction:column;
     align-items:baseline;
-    padding:30px;
-    gap:20px;
+    padding:1.875rem;
+    gap:1.25rem;
     border-right:1px solid var(--VerdeSuave);
 }
 .cards:hover{
     background-color:var(--PretoEsverdeadoClaro);
 }
 .cards img{
-    height:45px;
+    height:2.813rem;
     border:1px solid var(--VerdeSuave);
     border-radius:20%;
-    padding:10px;
+    padding:0.625rem;
 }
 .cards h5{
     color:var(--BrancoSuave);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:500;
-    font-size:20px;
+    font-size:1.250rem;
 }
 .TextoEnergias{
     color:var(--VerdeSuave);
@@ -266,7 +265,7 @@ main{
 }
 #EstatisticasCards{
     color:var(--VerdeVibrante);
-    font-size:15px;
+    font-size:0.938rem;
 }
 .LinhaDivisoria{
     display:block;
@@ -280,22 +279,22 @@ main{
 #ImpactoReal{
     display:flex;
     flex-direction:column;
-    gap:30px;
+    gap:1.875rem;
     flex:0 0 40%;
-    max-width:700px;
-    margin-bottom:200px;
+    max-width:43.75rem;
+    margin-bottom:12.5rem;
 }
 #ImpactoReal h4{
     color:var(--VerdeVibrante);
     font-family:'JetBrains Mono', 'Courier New', Courier, monospace;
     font-weight:500;
-    font-size:15px;
+    font-size:0.938rem;
 }
 #ImpactoReal h2{
     color:var(--BrancoSuave);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:500;
-    font-size:40px;
+    font-size:2.5rem;
 }
 #ImpactoReal p{
     color:var(--VerdeSuave);
