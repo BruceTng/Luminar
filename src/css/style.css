@@ -99,6 +99,26 @@ header{
     background-color:var(--VerdeVibranteEscuro);
 }
 
+/* Botão Hamburguer (3 barrinhas) - escondido no desktop, só aparece no breakpoint de 768px */
+#MenuHamburguer{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:28px;
+    height:20px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+#MenuHamburguer .Barra{
+    display:block;
+    width:100%;
+    height:3px;
+    background-color:var(--VerdeVibrante);
+    border-radius:2px;
+}
+
 /* MAIN_____________________________________________________________________________________________________________________________________________________________________ */
 main{
     background-color:var(--PretoEsverdeado);
@@ -228,8 +248,8 @@ main{
     margin-bottom:3.125rem;
 }
 .Informacoes{
-    display:flex;
-    flex-direction:row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color:var(--VerdeEscuro);
     border:1px solid var(--VerdeSuave);
     border-radius:20px;
@@ -262,6 +282,7 @@ main{
 .TextoEnergias{
     color:var(--VerdeSuave);
     line-height:1.6;
+    flex:1;
 }
 #EstatisticasCards{
     color:var(--VerdeVibrante);
@@ -274,6 +295,7 @@ main{
     background-color:var(--VerdeSuave);
     margin:1px 0;
     opacity: 0.5;
+    margin-top: auto;
 }
 /* Segunda Parte / Impacto Real */
 #ImpactoReal{
@@ -556,4 +578,244 @@ footer small{
 }
 #PrivacidadeFooter p a:hover{
     color:var(--BrancoSuave);
+}
+
+/* ================================================================================================================================================================================
+   RESPONSIVIDADE (BREAKPOINTS)
+   Abordagem "desktop-first": o CSS acima já é o layout de telas grandes.
+   Cada bloco abaixo entra em ação quando a tela é IGUAL OU MENOR que o valor
+   definido em max-width, e vai sobrescrevendo só o que precisa mudar.
+   Ordem: do maior breakpoint para o menor (isso importa, é assim que o CSS
+   decide qual regra "vence" quando duas se aplicam ao mesmo tempo).
+================================================================================================================================================================================ */
+
+/* ---------- ATÉ 1200px (telas médias / notebooks menores) ---------- */
+@media (max-width: 1200px){
+    .cabecalho{
+        padding:0 3rem;
+    }
+    #Links ul{
+        gap:3rem;
+    }
+    main{
+        padding:4rem;
+    }
+    .Texto h1{
+        font-size:3.4rem;
+    }
+    #EnergiaSustentavel h2,
+    #TextoProdutos h2,
+    #Topico3 h2,
+    #TextoCadastro h2{
+        font-size:2.4rem;
+    }
+    #Duvidas{
+        gap:80px;
+    }
+}
+
+/* ---------- ATÉ 1024px (tablets em modo paisagem) ---------- */
+@media (max-width: 1024px){
+    /* Seção inicial: texto e caixas de dados empilham em vez de ficar lado a lado */
+    #FuturoSolar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:3rem;
+    }
+    .Texto{
+        flex:none;
+        max-width:100%;
+    }
+    .Dados{
+        width:100%;
+    }
+
+    /* Energia sustentável: título deixa de reservar 40% da largura */
+    #EnergiaSustentavel h2{
+        flex:none;
+        max-width:100%;
+    }
+    .Informacoes{
+        grid-template-columns:1fr 1fr;
+    }
+
+    #ImpactoReal{
+        flex:none;
+        max-width:100%;
+    }
+
+    /* Loja: 3 colunas viram 2 */
+    #ProdutosInicio{
+        grid-template-columns:1fr 1fr;
+    }
+
+    /* Dúvidas: colunas viram empilhado */
+    #Duvidas{
+        flex-direction:column;
+        gap:3rem;
+    }
+    #Topico3{
+        flex:none;
+    }
+    #Respostas ul{
+        max-width:100%;
+    }
+    .FAQs summary{
+        width:100%;
+    }
+
+    /* Cadastro: formulário abaixo do texto, e paramos de usar largura fixa em px */
+    #Cadastro{
+        flex-direction:column;
+        padding:3rem 2rem;
+        gap:2rem;
+    }
+    #TextoCadastro{
+        flex:none;
+    }
+    #InputCadastro input,
+    #InputCadastro button{
+        width:100%;
+    }
+    #InputCadastro small{
+        margin-left:0;
+    }
+}
+
+/* ---------- ATÉ 768px (tablets em pé / celulares grandes) ---------- */
+@media (max-width: 768px){
+    /* Cabeçalho: menu de texto vira menu hambúrguer */
+    .cabecalho{
+        padding:0 1.5rem;
+    }
+    #MenuHamburguer{
+        display:flex;
+    }
+
+    /* O <nav> fica escondido por padrão e aparece como uma faixa abaixo do header,
+       ocupando 100% da largura, quando a classe .MenuAberto é adicionada pelo JS */
+    #Links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background-color:var(--PretoEsverdeado);
+        border-bottom:1px solid var(--VerdeVibrante);
+    }
+    #Links.MenuAberto{
+        display:block;
+    }
+    #Links ul{
+        flex-direction:column;
+        align-items:center;
+        gap:1.5rem;
+        padding:1.5rem 0;
+    }
+
+    main{
+        padding:2.5rem 1.5rem;
+    }
+
+    .Texto h1{
+        font-size:2.6rem;
+    }
+
+    .Dados{
+        grid-template-columns:1fr;
+    }
+
+    #EnergiaSustentavel h2{
+        font-size:2rem;
+    }
+    .Informacoes{
+        grid-template-columns:1fr;
+    }
+    .cards{
+        border-right:none;
+        border-bottom:1px solid var(--VerdeSuave);
+    }
+
+    #TextoProdutos{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:1rem;
+    }
+    #TextoProdutos p{
+        max-width:100%;
+        flex:none;
+    }
+    #ProdutosInicio{
+        grid-template-columns:1fr;
+    }
+
+    #Topico3 h2,
+    #TextoCadastro h2{
+        font-size:2rem;
+    }
+
+    /* Footer: os 3 blocos (logo, copyright, links) não cabem lado a lado.
+       Sem isso, o texto de copyright fica espremido numa coluna estreita
+       entre a logo e os links e quebra linha várias vezes. */
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:1.2rem;
+        padding:1.5rem;
+    }
+    #PrivacidadeFooter{
+        justify-content:center;
+    }
+}
+
+/* ---------- ATÉ 480px (celulares) ---------- */
+@media (max-width: 480px){
+    .cabecalho{
+        padding:0 1rem;
+    }
+    #LogoLink h2{
+        font-size:1.2rem;
+    }
+    #Carrinho button{
+        padding:0.6rem 0.9rem;
+        font-size:0.85rem;
+    }
+
+    main{
+        padding:2rem 1rem;
+    }
+
+    .Texto h1{
+        font-size:2rem;
+    }
+    #IrProdutos,
+    #ComoFunciona{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin:0 0 0.8rem 0;
+    }
+
+    .box h3{
+        font-size:1.5rem;
+    }
+
+    #EnergiaSustentavel h2{
+        font-size:1.6rem;
+    }
+
+    #TextoProdutos h2{
+        font-size:1.8rem;
+    }
+    .preco{
+        font-size:1.2rem;
+    }
+
+    #Topico3 h2,
+    #TextoCadastro h2{
+        font-size:1.6rem;
+    }
+    #Cadastro{
+        padding:2rem 1.2rem;
+    }
 }
