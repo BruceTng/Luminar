@@ -110,6 +110,8 @@ header{
     border:none;
     cursor:pointer;
     padding:0;
+    margin-left:1rem;
+    flex-shrink:0;
 }
 #MenuHamburguer .Barra{
     display:block;
